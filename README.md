@@ -1,0 +1,1 @@
+# subratparida29mathphy.github.io
