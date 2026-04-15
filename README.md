@@ -1,60 +1,123 @@
 # Personal Academic Website - Subrat Parida
 
-A secure, static personal website for academics and researchers. Zero cost, maximum security.
+A secure, static personal website with slide-style navigation for academics and researchers.
 
-**Status:** Populated with CV data from `D:\ParidaUser\DOWNLOADS\SubratP.tex`
+**Live Site:** [https://psubrat29.github.io/subratparida29mathphy.github.io](https://psubrat29.github.io/subratparida29mathphy.github.io)
+
+---
+
+## Features
+
+- **Slide-Style Navigation:** 4 distinct pages with smooth transitions
+- **Mathematical Physics Theme:** Animated background with math symbols
+- **Zero External Dependencies:** All CSS/JS is local
+- **Keyboard Navigation:** Arrow keys, number keys (1-4), Home/End
+- **Touch/Swipe Support:** Mobile-friendly gestures
+- **Security Hardened:** CSP headers, no external resources
+
+---
+
+## Site Structure
+
+| Slide | Content |
+|-------|---------|
+| 1 (Home) | About, Profile, Research Vision |
+| 2 (Research) | Research Areas + Publications (with filters) |
+| 3 (Academic) | Education, Experience, Conferences, Training |
+| 4 (Skills & Contact) | Skills, Awards, Contact Info, Social Links |
 
 ---
 
 ## Security Features
 
+- **Content Security Policy (CSP)** headers
 - **No external dependencies** - All CSS/JS is inline or local
-- **No database** - Static HTML only, nothing to hack
-- **No third-party services** - No analytics, no trackers
-- **Content Security Policy** - Prevents XSS attacks
+- **No JavaScript** where possible (vanilla JS only)
 - **Email obfuscation** - Reduces spam scraping
 - **HTTPS enforced** - Via GitHub Pages
+- **No database** - Static site, nothing to hack
 
 ---
 
-## Quick Start
+## Deployment via GitHub Actions
 
-### Step 1: Review your CV data
+### Step 1: Initialize Git and Push
 
-Your CV data has been extracted and is stored in `CV_DATA_SUBRAT.json`. Review it for accuracy.
+Open Command Prompt and run:
 
-### Step 2: Add your profile photo (optional)
+```bash
+cd C:\Users\Lenovo\personal-website
 
-Place a profile photo named `profile.jpg` in the `images/` folder, then in `index.html` replace:
-```html
-<div class="photo-placeholder" aria-hidden="true">👤</div>
+git init
+git add .
+git commit -m "Initial commit: Slide-style academic website"
+git branch -M main
+git remote add origin https://github.com/PSubrat29/subratparida29mathphy.github.io.git
+git push -u origin main
 ```
-with:
+
+### Step 2: Configure GitHub Pages for Actions
+
+1. Go to: `https://github.com/PSubrat29/subratparida29mathphy.github.io/settings/pages`
+2. Under **Source**, select **GitHub Actions** (not "Deploy from a branch")
+3. Once selected, GitHub will automatically use the workflow in `.github/workflows/deploy.yml`
+
+### Step 3: Verify Deployment
+
+1. Go to the **Actions** tab in your GitHub repository
+2. You should see "Deploy to GitHub Pages" workflow running
+3. Wait for it to complete (green checkmark)
+4. Click on the workflow run to see the deployment URL
+
+---
+
+## Local Testing
+
+Simply open `index.html` in your browser, or use a local server:
+
+```bash
+# Using Python (if installed)
+cd C:\Users\Lenovo\personal-website
+python -m http.server 8000
+# Then open: http://localhost:8000
+```
+
+---
+
+## Customization
+
+### Add Profile Photo
+
+1. Save your photo as `images/profile.jpg`
+2. In `index.html`, replace the placeholder:
 ```html
+<!-- Replace this: -->
+<div class="photo-placeholder" aria-hidden="true">
+    <span class="math-avatar">∫∂</span>
+</div>
+
+<!-- With this: -->
 <img src="images/profile.jpg" alt="Subrat Parida">
 ```
 
-### Step 3: Set up GitHub Pages
+### Update Contact Info
 
-1. Create a new repository on GitHub: `subratparida.github.io` (or your username)
-2. Push this code to the repository:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Subrat Parida academic website"
-   git branch -M main
-   git remote add origin https://github.com/subratparida/subratparida.github.io.git
-   git push -u origin main
-   ```
-3. Go to repository Settings → Pages
-4. Under "Source", select "GitHub Actions"
-5. Your site will be live at `https://subratparida.github.io`
+Edit the contact section in `index.html`:
+- Email: Change `href="mailto:your@email.com"`
+- Phone: Change `href="tel:+91..."`
+- Social links: Update the `href` attributes
 
-### Step 4: Verify deployment
+---
 
-1. Go to the Actions tab in your GitHub repository
-2. Wait for the "Deploy to GitHub Pages" workflow to complete
-3. Click on the workflow run to see the deployment URL
+## Keyboard Shortcuts
+
+| Key | Action |
+|-----|--------|
+| ← / ↑ | Previous slide |
+| → / ↓ | Next slide |
+| 1-4 | Jump to slide |
+| Home | First slide |
+| End | Last slide |
 
 ---
 
@@ -62,65 +125,19 @@ with:
 
 ```
 personal-website/
-├── index.html              # Main website
+├── index.html              # Main website (4 slides)
 ├── css/
-│   └── style.css           # All styles
-├── images/                 # Add your photos here
+│   └── style.css           # All styles with math theme
+├── js/
+│   └── slides.js           # Slide navigation logic
+├── images/                 # Add photos here
 │   └── profile.jpg
 ├── .github/
 │   └── workflows/
-│       ├── deploy.yml      # Auto-deploy on git push
-│       └── security-headers.yml
-├── CV_DATA_SUBRAT.json     # Your CV data (from LaTeX file)
-├── _config.yml             # GitHub Pages config
+│       └── deploy.yml      # GitHub Actions deployment
+├── CV_DATA_SUBRAT.json     # CV data
 └── README.md               # This file
 ```
-
----
-
-## Website Sections
-
-Based on your CV, the website includes:
-
-1. **About** - Research vision and profile
-2. **Research Interests** - 8 areas from Number Theory to Reaction Rate Theory
-3. **Publications** - Book chapter, journal articles, preprints (all from CV)
-4. **Conference Presentations** - ICSAMY, ICSIDS, ICSFA, ICFIDCAA
-5. **Advanced Training** - ICTP, MIT, Harvard, ETH, and other advanced courses
-6. **Experience** - Research Intern at Pondicherry University
-7. **Education** - M.Sc. (Pondicherry), B.Sc. (Utkal)
-8. **Skills & Awards** - Programming, scholarships, languages
-9. **Contact** - Email (obfuscated), profile links
-
----
-
-## Customization
-
-### Colors
-
-Edit `css/style.css` and modify the CSS custom properties:
-
-```css
-:root {
-    --color-primary: #003366;    /* Main accent color */
-    --color-secondary: #005599;  /* Secondary color */
-    --color-link: #0066cc;       /* Link color */
-}
-```
-
-### Adding/Updating Publications
-
-The publications section is already populated from your CV. To add new ones, add entries in `index.html` under the appropriate section.
-
----
-
-## Security Best Practices
-
-1. **Never commit sensitive data** - No API keys, passwords, or private info
-2. **Keep dependencies minimal** - This site has zero npm packages
-3. **Review GitHub Actions** - The workflow file runs on every push
-4. **Use relative URLs** - For internal links, use relative paths
-5. **Enable branch protection** - In GitHub Settings, protect your main branch
 
 ---
 
@@ -128,7 +145,7 @@ The publications section is already populated from your CV. To add new ones, add
 
 ### Site not deploying?
 
-1. Check the Actions tab for error messages
+1. Check the **Actions** tab for error messages
 2. Ensure your branch is named `main` or `master`
 3. Verify `index.html` exists in the root
 
@@ -138,16 +155,17 @@ The publications section is already populated from your CV. To add new ones, add
 2. Verify the file path: `css/style.css`
 3. Clear browser cache (Ctrl+Shift+R)
 
-### Email not showing?
+### GitHub Pages Source is greyed out?
 
-1. Enable JavaScript in your browser
-2. Check that `data-user` and `data-domain` attributes are set correctly
-3. Verify no JavaScript errors in Console
+This means GitHub Pages is already configured. Go to **Actions** tab and check if deployment is already running. If you want to switch to Actions:
+1. First disable Pages in Settings → Pages → Source → "Disable"
+2. Then push the workflow file
+3. Re-enable Pages with "GitHub Actions" as source
 
 ---
 
 **Built with:** Pure HTML5, CSS3, and vanilla JavaScript  
 **Hosting:** GitHub Pages (free, HTTPS included)  
-**Security score:** A+ (no external resources, no trackers)
+**Deployment:** GitHub Actions  
 
-**Data source:** CV LaTeX file (`SubratP.tex`) - All information extracted directly, no external sources used.
+**Data source:** CV LaTeX file (`SubratP.tex`) - All information extracted directly.
