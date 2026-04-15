@@ -1,0 +1,86 @@
+# GitHub Actions Workflow for deploying to GitHub Pages
+# Security: No external dependencies, uses built-in GitHub Actions
+
+name: Deploy to GitHub Pages
+
+on:
+  # Deploy on every push to main branch
+  push:
+    branches:
+      - main
+      - master
+  # Allow manual deployment from Actions tab
+  workflow_dispatch:
+
+# Security: Limit permissions to minimum required
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Security: Fetch only the latest commit (shallow clone)
+          fetch-depth: 1
+
+      - name: Validate HTML files
+        run: |
+          echo "Checking HTML syntax..."
+          # Basic validation - check for unclosed tags
+          for file in *.html; do
+            if [ -f "$file" ]; then
+              echo "Validating $file..."
+              # Check for basic HTML structure
+              grep -q "<!DOCTYPE html>" "$file" || echo "Warning: $file may be missing DOCTYPE"
+              grep -q "<html" "$file" || echo "Warning: $file may be missing <html> tag"
+              grep -q "</html>" "$file" || echo "Warning: $file may be missing </html> tag"
+            fi
+          done
+          echo "Validation complete."
+
+      - name: Validate CSS files
+        run: |
+          echo "Checking CSS files..."
+          for file in css/*.css; do
+            if [ -f "$file" ]; then
+              echo "Found: $file"
+            fi
+          done
+
+      - name: List deployment contents
+        run: |
+          echo "Deployment contents:"
+          ls -la
+          echo "---"
+          ls -la css/ 2>/dev/null || echo "No CSS directory"
+          ls -la js/ 2>/dev/null || echo "No JS directory"
+          ls -la images/ 2>/dev/null || echo "No images directory"
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload only public files (no hidden files except .github)
+          path: |
+            .
+            !.github
+            !.git
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

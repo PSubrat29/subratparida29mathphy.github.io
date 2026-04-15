@@ -1,0 +1,28 @@
+# Optional: Add security headers via GitHub Pages custom headers
+# Note: GitHub Pages has limited header customization
+# For full control, use Cloudflare Pages (also free)
+
+# This workflow is a placeholder for future security enhancements
+# Current security is handled via inline meta tags in index.html
+
+name: Security Headers (Optional)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify-security:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify no external resources
+        run: |
+          echo "Checking for external resources in HTML..."
+          ! grep -E '(http://|https://)[^g][^i][^t]' index.html || echo "Warning: External HTTP resources found"
+          echo "Security check complete."
+
+      - name: Verify CSP meta tag exists
+        run: |
+          grep -q "Content-Security-Policy" index.html && echo "CSP meta tag found" || echo "Warning: No CSP found"

@@ -1,0 +1,269 @@
+{
+  "_info": "Extracted from CV LaTeX file: D:\\ParidaUser\\DOWNLOADS\\SubratP.tex",
+  "_date": "2026-04-15",
+
+  "personal": {
+    "fullName": "Subrat Parida",
+    "email": "paridasubrat553@gmail.com",
+    "phone": "+91 7978999029",
+    "location": "Odisha, India",
+    "profiles": {
+      "linkedin": "https://www.linkedin.com/in/subrat-parida-a98b42337",
+      "orcid": "https://orcid.org/0000-0001-8754-7719",
+      "googleScholar": "https://scholar.google.com/citations?hl=en&user=s0MLF2gAAAAJ",
+      "researchGate": "https://www.researchgate.net/profile/Subrat-Parida"
+    }
+  },
+
+  "researchVision": "Focused on decoding the mathematical architecture of the universe, specifically the geometric validity of gravity and the topological nature of dimensionality. My objective is to utilize advanced formalism to explore the underlying constraints of reference frames, the fundamental structure of time, and the precise definitions of freedom within physical systems.",
+
+  "researchInterests": [
+    "Number Theory (Theory of p-adic L-functions and their applications)",
+    "Mathematical General Relativity, Theory of Gravity & its modifications",
+    "Cosmology, Dark Matter and Dark Energy stability analysis",
+    "Geometric Analysis, Theory of Manifolds, and Non-Smooth Differential Geometry",
+    "Lie Theory and Analysis of PDEs",
+    "Lie Sphere Geometry, Integrable Systems, and Geometric Variational Problems",
+    "Special Functions and Fractional Calculus (Applications in Physics), Integral Transforms",
+    "Reaction Rate Theory in Astrophysics"
+  ],
+
+  "education": [
+    {
+      "degree": "M.Sc. (Honours) in Mathematics",
+      "institution": "Pondicherry University",
+      "location": "Puducherry, India",
+      "period": "Nov 2022 – Sep 2024",
+      "cgpa": "8.33/10",
+      "thesis": "A Review of the Systematic Study on the Exact Static Symmetric Solutions of Einstein Field Equations",
+      "advisor": "Dr. Rajeswari Seshadri"
+    },
+    {
+      "degree": "B.Sc. (Honours) in Mathematics",
+      "institution": "Utkal University",
+      "location": "Odisha, India",
+      "period": "Aug 2019 – Sep 2022",
+      "cgpa": "9.27/10",
+      "thesis": "Maxwell's Equations and Mathematics in it",
+      "advisor": "Mr. Smruti Ranjan Sahoo"
+    }
+  ],
+
+  "experience": [
+    {
+      "position": "Research Intern",
+      "institution": "Pondicherry University",
+      "location": "Puducherry, India",
+      "period": "November 2024 – July 2025",
+      "project": "Study of Special Functions in Reaction Rate Theory of Nuclear Astrophysics",
+      "advisor": "Dr. Rakesh Kumar Parmar"
+    }
+  ],
+
+  "publications": {
+    "bookChapter": [
+      {
+        "title": "On Generalized Kraetzel function and their associated properties with application",
+        "authors": ["R. K. Parmar", "S. Parida", "S. D. Purohit"],
+        "book": "Recent Developments in Theory and Applications of Fractional Order Systems",
+        "publisher": "Morgan Kaufmann (Elsevier)",
+        "pages": "67-78",
+        "year": 2026,
+        "doi": "10.1016/B978-0-44-323952-6.00010-9"
+      }
+    ],
+    "journalArticles": [
+      {
+        "title": "On Super-Hyperbolic Wormhole Geometries and their Deformations",
+        "authors": ["S. Parida"],
+        "venue": "Submitted Work"
+      },
+      {
+        "title": "Coprimality Anomalies and Density Laws in Iterated Prime-Indexed Exponentiation",
+        "authors": ["S. Parida"],
+        "venue": "Submitted Work"
+      },
+      {
+        "title": "Some Families of the Eulerian Integrals Involving Generalized Hypergeometric Functions",
+        "authors": ["S. Ali", "D. Kumar", "S. Parida", "S. D. Purohit"],
+        "venue": "Bol. Soc. Paran. Mat.",
+        "year": 2026,
+        "doi": "10.5269/bspm.77982"
+      },
+      {
+        "title": "Some Families of Extended Beta and Hypergeometric Functions",
+        "authors": ["G. Suthar", "S. Parida"],
+        "venue": "Montes Taurus J. Pure Appl. Math.",
+        "volume": "7(2)",
+        "pages": "50-62",
+        "year": 2025,
+        "articleId": "MTJPAM-D-24-00123"
+      },
+      {
+        "title": "On Mittag-Leffler-Kummer Extended Beta Functions",
+        "authors": ["S. Parida"],
+        "venue": "Honam Mathematical Journal",
+        "volume": "47(1)",
+        "pages": "24-33",
+        "year": 2025,
+        "doi": "10.5831/HMJ.2025.47.1.24",
+        "zbl": "08031002"
+      },
+      {
+        "title": "A Class of Eulerian Integrals involving Generalized Hypergeometric Functions with Applications",
+        "authors": ["S. Ali", "D. Kumar", "S. Parida"],
+        "venue": "Commun. Korean Math. Soc.",
+        "volume": "40(1)",
+        "pages": "111-124",
+        "year": 2025,
+        "doi": "10.4134/CKMS.c240072",
+        "zbl": "1558.33004"
+      },
+      {
+        "title": "On Generalized Extended Beta and Hypergeometric Functions",
+        "authors": ["S. Ali", "N.K. Regar", "S. Parida"],
+        "venue": "Honam Mathematical Journal",
+        "volume": "46(2)",
+        "pages": "313-334",
+        "year": 2024,
+        "doi": "10.5831/HMJ.2024.46.2.313",
+        "zbl": "7939327"
+      },
+      {
+        "title": "A Review of the Systematic Study on the Exact Static Symmetric Solutions of Einstein Field Equations",
+        "authors": ["S. Parida"],
+        "venue": "Zenodo",
+        "year": 2024,
+        "doi": "10.5281/zenodo.12148038"
+      }
+    ],
+    "preprints": [
+      {
+        "title": "A Novel Space-Time Transport Ratio for Analyzing Field Dynamics",
+        "authors": ["S. Parida"],
+        "venue": "Preprints.org (MDPI AG)",
+        "year": 2025,
+        "doi": "10.20944/preprints202510.0287.v1"
+      },
+      {
+        "title": "A Note on Generalized Bessel Function",
+        "authors": ["S. Parida"],
+        "venue": "SSRN (Elsevier BV)",
+        "year": 2025,
+        "doi": "10.2139/ssrn.5467426"
+      },
+      {
+        "title": "On Certain new asymptotic formulae for the Bessel function of the first kind",
+        "authors": ["S. Parida"],
+        "venue": "HAL Open Science",
+        "year": 2025,
+        "id": "hal-05236085"
+      }
+    ]
+  },
+
+  "conferences": [
+    {
+      "name": "ICSAMY 2024",
+      "location": "IIT Indore",
+      "presentation": "Closed-form representations of extended astrophysical thermonuclear functions"
+    },
+    {
+      "name": "ICSIDS 2024",
+      "location": "Pondicherry University",
+      "presentation": "On Mittag-Leffler-Kummer Extended Beta Function"
+    },
+    {
+      "name": "ICSFA 2023",
+      "location": "Pondicherry University",
+      "presentation": "On Generalized Kraetzel Function and Its Associated Properties"
+    },
+    {
+      "name": "ICFIDCAA 2023",
+      "location": "Pondicherry University",
+      "presentation": "A Note on Generalized Bessel Function"
+    }
+  ],
+
+  "advancedTraining": [
+    {
+      "institution": "Physics LATAM / ICTP",
+      "course": "Riemannian and Complex Geometry",
+      "period": "Aug 2025-Feb 2026"
+    },
+    {
+      "institution": "Milano-Bicocca University",
+      "course": "Mini-Course on Geometry of String Compactifications (Alessandro Tomasiello)",
+      "period": "Feb 2026"
+    },
+    {
+      "institution": "University of Trieste",
+      "course": "Mini-Course on Moduli Spaces of Riemann Surfaces (Danilo Lewański)",
+      "period": "Nov 2025"
+    },
+    {
+      "institution": "Caltech",
+      "course": "Lieb-Robinson bounds and their consequences (Anton Kapustin)",
+      "period": "Feb 2026"
+    },
+    {
+      "institution": "Harvard University (CMSA)",
+      "course": "A fully local extension of Chern-Simons Theory (Dan Freed)",
+      "period": "Jan 2026"
+    },
+    {
+      "institution": "University of Erlangen-Nuremberg",
+      "course": "Logarithmic Conformal Field Theory (Thomas Creutzig)",
+      "period": "Jan 2026"
+    },
+    {
+      "institution": "The University of Dublin",
+      "course": "Topological Correlators of Supersymmetric Yang-Mills and Four-Manifold Invariants (Jan Manschot)",
+      "period": "Jan 2026"
+    },
+    {
+      "institution": "ETH Zürich",
+      "course": "Events, States and Evolution in Quantum Mechanics (Jürg Fröhlich)",
+      "period": "Jan 2026"
+    },
+    {
+      "institution": "IASM Zhejiang University",
+      "course": "Geometry of Einstein Metrics (Song Sun)",
+      "period": "Dec 2025"
+    },
+    {
+      "institution": "University of Bonn",
+      "course": "Geometric Structures on Surfaces (Ursula Hamenstädt)",
+      "period": "Dec 2025"
+    },
+    {
+      "institution": "YMSC, Tsinghua & BIMSA",
+      "course": "An Introduction to Alterfold Theory (Zhengwei Liu)",
+      "period": "Nov 2025"
+    },
+    {
+      "institution": "University of Notre Dame",
+      "course": "2d BF theory as a Topological CFT (Pavel Mnev)",
+      "period": "Oct 2025"
+    },
+    {
+      "institution": "MIT",
+      "course": "Entanglement von Neumann Algebras and Emergence of Spacetime (Hong Liu)",
+      "period": "Sep 2025"
+    }
+  ],
+
+  "skills": {
+    "programming": ["Python", "C++", "Wolfram Mathematica", "MATLAB", "JupyterLab", "LaTeX", "MS Office Suite"],
+    "awards": [
+      "Merit-cum-Merit Scholarship (Pondicherry University, 2022-24)",
+      "Govt. of Odisha Scholarship (2014-22)"
+    ],
+    "languages": [
+      {"language": "English", "proficiency": "Proficient"},
+      {"language": "Hindi", "proficiency": "Proficient"},
+      {"language": "German", "proficiency": "Beginner"},
+      {"language": "Odia", "proficiency": "Native"}
+    ]
+  }
+}
