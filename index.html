@@ -7,7 +7,7 @@
     <meta name="generator" content="Static HTML">
 
     <!-- Security Headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-ancestors 'none'; base-uri 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-ancestors 'none'; base-uri 'self'">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -17,22 +17,8 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><text y='32' font-size='32'>∫∂</text></svg>">
 </head>
 <body>
-    <!-- Mathematical Background -->
-    <div class="math-bg" aria-hidden="true">
-        <div class="math-symbol symbol-1">∫</div>
-        <div class="math-symbol symbol-2">∂</div>
-        <div class="math-symbol symbol-3">∇</div>
-        <div class="math-symbol symbol-4">∑</div>
-        <div class="math-symbol symbol-5">π</div>
-        <div class="math-symbol symbol-6">∞</div>
-        <div class="math-symbol symbol-7">√</div>
-        <div class="math-symbol symbol-8">Ω</div>
-        <div class="math-symbol symbol-9">Γ</div>
-        <div class="math-symbol symbol-10">ℏ</div>
-        <div class="wave wave-1"></div>
-        <div class="wave wave-2"></div>
-        <div class="wave wave-3"></div>
-    </div>
+    <!-- 3D Wormhole Background -->
+    <div class="math-bg" aria-hidden="true"></div>
 
     <!-- Slide Navigation -->
     <nav class="slide-nav" role="navigation" aria-label="Main navigation">
@@ -67,9 +53,7 @@
                 <div class="about-hero">
                     <div class="profile-section">
                         <div class="profile-photo">
-                            <div class="photo-placeholder" aria-hidden="true">
-                                <span class="math-avatar">∫∂</span>
-                            </div>
+                            <img src="images/profile1.jpg" alt="Subrat Parida">
                             <!-- Uncomment when you add your photo:
                             <img src="images/profile.jpg" alt="Subrat Parida">
                             -->
@@ -547,9 +531,14 @@
 
     <footer role="contentinfo">
         <p>&copy; <span id="year"></span> Subrat Parida. All rights reserved.</p>
+        <p id="last-updated"></p>
         <p class="footer-note">Mathematical Physics &bull; Geometry &bull; Topology &bull; Analysis</p>
     </footer>
 
+    <!-- Three.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <!-- 3D Wormhole Background Script -->
+    <script src="js/wormhole-bg.js"></script>
     <script src="js/slides.js"></script>
 </body>
 </html>
