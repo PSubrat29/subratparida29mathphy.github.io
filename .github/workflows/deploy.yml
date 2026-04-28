@@ -75,11 +75,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload only public files (no hidden files except .github)
-          path: |
-            .
-            !.github
-            !.git
+          # Upload the entire repository (action will ignore .git, .github, and node_modules by default)
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
